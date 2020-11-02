@@ -83,7 +83,7 @@ class Form extends Component {
     render() {
         return(
             <div className="container">
-                <form className="main-form">
+                <form className="main-form"  onSubmit={this.onSubmit}>
                     <div className="form-div">
                         <label>Name</label>
                         <input type="text" className="form-input" onChange={this.onChangeName} />
@@ -104,7 +104,7 @@ class Form extends Component {
                         <label>Gift</label>
                         <textarea type="text" className="form-input" onChange={this.onChangeGift} />
                     </div>
-                    <button type="submit" className="submit" onSubmit={this.onSubmit}>Submit</button>
+                    <button type="submit" className="submit">Submit</button>
                 </form>
             </div>
         )
